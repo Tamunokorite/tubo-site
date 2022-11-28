@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | T's Spot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="booktable.html">Book-Table</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="brand"><h1>T's Spot</h1></a>
+        <nav>
+            <ul>
+                <li><a href="order.html" id="order">Order Now</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contact-page" class="contact-page">
+        <div class="">
+            <h2 class="section-title">CONTACT US</h2>
+            <div class="row">
+                <div>
+                    <input type="text" id="email" placeholder="EMAIL">
+                </div>
+                <div>
+                    <input type="text" id="name"  placeholder="NAME">
+                </div>
+            </div>
+            <div class="row">
+                <div id = "msg">
+                    <textarea name="msg" id="message" cols="30" rows="10" placeholder="Your message here..."></textarea>
+                </div>
+            </div>
+            <a href="#" class="book-table-btn" id="rounded-btn" onclick="sendMessage()">SEND MESSAGE</a>
+        </div>
+    </section>
+
+    <footer id="contact" class="contact">
+        <div class="row">
+            <div class="contact-item">
+                <h3>EMAIL US</h3>
+                <p class="muted">info@tspot.com</p>
+            </div>
+            <div class="contact-item">
+                <h3>CALL US</h3>
+                <p class="muted">(234) 800-000-0000</p>
+            </div>
+            <div class="contact-item">
+                <h3>FIND US</h3>
+                <p class="muted">2406 Mbora District Citec Estate</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>

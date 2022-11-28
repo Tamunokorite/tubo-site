@@ -104,6 +104,23 @@ header a:hover {
     font-weight: 300;
 }
 
+#order {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.15rem;
+    color: #fff;
+    background-color: #ff214f;
+    border-color: #ff214f;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    user-select: none;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .home .overlay a {
     padding: 0.8rem 1.6rem;
     font-size: 1.25rem;
@@ -122,7 +139,7 @@ header a:hover {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.home .overlay a:hover {
+.home .overlay a:hover, #order:hover {
     color: #fff;
     background-color: #fa0034;
     border-color: #ed0031;
@@ -132,6 +149,7 @@ header a:hover {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 2rem;
 }
 
 .row {
@@ -199,7 +217,7 @@ header a:hover {
     transform: scale(1.2);
 }
 
-.book-table {
+.book-table, .contact-page, .order-page {
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -214,7 +232,7 @@ header a:hover {
     text-align: center;
 }
 
-.book-table::before {
+.book-table::before, .contact-page::before, .order-page::before {
     content: '';
     position: absolute;
     top: 0;
@@ -227,7 +245,7 @@ header a:hover {
     opacity: .3;
 }
 
-.book-table::after {
+.book-table::after, .contact-page::after, .order-page::after {
     content: '';
     position: absolute;
     top: 0;
@@ -238,17 +256,23 @@ header a:hover {
     z-index: -2;
 }
 
-.book-table .section-title, .book-table .row {
+.book-table .section-title, .book-table .row, .contact-page .section-title, .contact-page .row,
+.order-page .section-title, .order-page .row {
     margin-bottom: 3rem;
 }
 
-.book-table .row div {
+.book-table h2, .contact-page h2, .order-page h2 {
+    margin-top: 7rem;
+}
+
+.book-table .row div, .contact-page .row div, .order-page .row div {
     margin: 2rem;
     flex: 0 0 40%;
     max-width: 40%;
 }
 
-.book-table .row div input {
+.book-table .row div input, .contact-page .row div input, .contact-page .row div textarea,
+.order-page .row div input {
     background: transparent;
     color: #fff;
     border: 2px solid #fff;
@@ -263,6 +287,16 @@ header a:hover {
     overflow: visible;
     margin: 0;
     font-family: inherit;
+}
+
+#msg {
+    flex: 0 0 85%;
+    max-width: 100%;
+}
+
+.contact-page .row div textarea {
+    resize: none;
+    height: 400px;
 }
 
 .book-table-btn {
@@ -306,7 +340,7 @@ header a:hover {
 
 .reviews h2 {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 7rem;
     margin-bottom: 3rem;
 }
 
